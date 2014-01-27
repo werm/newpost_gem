@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'newblogpost'
+
+newpost = Newblogpost::Post.new
+newpost.make_post
