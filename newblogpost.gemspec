@@ -19,5 +19,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "bundler", "~> 1.5"
   gem.add_development_dependency 'rake', '~> 0'
   gem.version  = Newblogpost::VERSION
-  gem.post_install_message = "Type \"newblogpost help\" for usage instructions. But you probably shouldn't be using this."
+  gem.post_install_message = "\nType \"newblogpost help\" for usage instructions. \n\033[1mBut you probably shouldn't be using this, anyway.\033[0m"
 end
