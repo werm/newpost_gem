@@ -17,6 +17,7 @@ Gem::Specification.new do |gem|
   gem.name = "newblogpost"
   gem.require_paths = ["lib"]
   gem.add_development_dependency "bundler", "~> 1.5"
-  gem.add_development_dependency "rake"
+  gem.add_development_dependency 'rake', '~> 0'
   gem.version  = Newblogpost::VERSION
+  gem.post_install_message = "Type \"newblogpost help\" for usage instructions. But you probably shouldn't be using this."
 end

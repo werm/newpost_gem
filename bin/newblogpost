@@ -2,5 +2,5 @@
 
 require 'newblogpost'
 
-newpost = Newblogpost::Post.new
+newpost = Newblogpost::Post.new 
 newpost.make_post
