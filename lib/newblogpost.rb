@@ -8,7 +8,7 @@ module Newblogpost
         red_asterics = "\033[31m*\033[0m"
         if ARGV[0] == 'help' && check_for_git.empty?
           puts "#{red_asterics}\n#{red_asterics} To generate a new post, enter #{"\033[32mnewblogpost \"Your post title\" \"Your Name\"\033[0m"}\n#{red_asterics}\n#{red_asterics} This will generate a new file in the \"posts\" directory.\n#{red_asterics}"
-        else
+        elsif ARGV[0] == 'help' && !check_for_git.empty?
           puts "#{red_asterics}\n#{red_asterics} To generate a new post, enter #{"\033[32mnewblogpost \"Your post title\"\033[0m"}\n#{red_asterics}\n#{red_asterics} This will generate a new file in the \"posts\" directory.\n#{red_asterics}"
         end
 
